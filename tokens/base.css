@@ -1,0 +1,35 @@
+/* Fashion Cognition Lab — base resets & global element defaults.
+   Minimal: set the paper background, body type, selection color, smooth scroll.
+   Components and kits style themselves via tokens; this is just the canvas. */
+
+::selection { background: var(--selection-bg); color: var(--selection-fg); }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--surface-page);
+  color: var(--text-strong);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--lh-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* The editorial italic accent — used inline for the brand "voice". */
+.fcl-accent {
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-weight: var(--fw-regular);
+  color: var(--text-accent);
+}
+
+/* Mono eyebrow / label utility. */
+.fcl-label {
+  font-family: var(--font-label);
+  font-size: var(--label-md);
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  color: var(--text-accent);
+}

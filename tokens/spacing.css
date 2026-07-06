@@ -1,0 +1,40 @@
+/* Fashion Cognition Lab — spacing, layout, borders, motion.
+   The system is a spec-sheet grid: a fixed 1280px measure, fluid clamp gutters,
+   1px ink hairlines, and effectively zero corner radius (sharp = "clinical").
+   The "sketch" theme is the only place radius / hard-offset shadow appear. */
+:root {
+  /* ---- Layout measure ---- */
+  --measure-max:   1280px;                    /* @kind spacing */
+  --gutter:        clamp(22px, 5vw, 56px);    /* @kind spacing */
+  --section-y:     clamp(72px, 10vw, 128px);  /* @kind spacing */
+  --eyebrow-dash:  34px;                       /* @kind spacing */
+
+  /* ---- Spacing scale ---- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 22px;
+  --space-6: 30px;
+  --space-7: 44px;
+  --space-8: 72px;
+
+  /* ---- Borders ---- */
+  --border-width: 1px;
+
+  /* ---- Radius (clinical = 0; pill for sketch buttons) ---- */
+  --radius-none: 0;
+  --radius-pill: 999px; /* sketch-theme buttons only */
+
+  /* ---- Shadows: clinical theme has NONE. Sketch uses a hard offset lift. ---- */
+  --shadow-none:      none;
+  --shadow-sketch-sm: 3px 3px 0 var(--fcl-ink);  /* @kind shadow */
+  --shadow-sketch-md: 6px 6px 0 var(--fcl-ink);  /* @kind shadow */
+  --shadow-sketch-lg: 10px 10px 0 var(--fcl-ink);/* @kind shadow */
+
+  /* ---- Motion ---- */
+  --ease:          cubic-bezier(0.22, 0.61, 0.36, 1); /* @kind other */
+  --dur-fast:      0.18s;                              /* @kind other */
+  --dur:           0.35s;                              /* @kind other */
+  --marquee-speed: 36s;                                /* @kind other */
+}

@@ -1,0 +1,48 @@
+/* Fashion Cognition Lab — colour system.
+   A warm paper-and-ink palette: cream backgrounds, near-black ink hairlines,
+   oxblood as the single hot accent, powder blue as the cool counterpoint. */
+:root {
+  /* ---- Paper / surfaces (warm cream family) ---- */
+  --fcl-paper:        #F9F6F1; /* page background — warm cream */
+  --fcl-paper-deep:   #EDE7DC; /* alternating section background */
+  --fcl-paper-card:   #FBF8F2; /* card / form fill, lightest cream */
+
+  /* ---- Ink (near-black, slightly warm) ---- */
+  --fcl-ink:          #1A1514; /* text, 1px hairline borders, dark sections */
+  --fcl-ink-soft:     #564848; /* secondary body copy */
+  --fcl-taupe:        #9A8F82; /* muted mono labels, captions */
+  --fcl-hairline:     #CBBFAE; /* interior hairlines on cream (softer than ink) */
+
+  /* ---- Oxblood (the one hot accent) ---- */
+  --fcl-oxblood:      #5E1803; /* primary accent — links, fills, emphasis */
+
+  /* ---- Powder blue (cool counterpoint) ---- */
+  --fcl-blue:         #C8D8E4; /* surface — value-model, callout chips */
+  --fcl-blue-deep:    #9BBACE; /* marquee star, blue accent */
+  --fcl-blue-ink:     #3A4A52; /* body copy on blue surface */
+
+  /* ---- Blush (sketch-theme decorative dots only) ---- */
+  --fcl-blush:        #E4BBA9;
+
+  /* ============ Semantic aliases ============ */
+  --surface-page:     var(--fcl-paper);
+  --surface-alt:      var(--fcl-paper-deep);
+  --surface-card:     var(--fcl-paper-card);
+  --surface-dark:     var(--fcl-ink);
+  --surface-blue:     var(--fcl-blue);
+
+  --text-strong:      var(--fcl-ink);
+  --text-body:        var(--fcl-ink-soft);
+  --text-muted:       var(--fcl-taupe);
+  --text-on-dark:     var(--fcl-paper);
+  --text-accent:      var(--fcl-oxblood);
+
+  --accent:           var(--fcl-oxblood);
+  --accent-cool:      var(--fcl-blue);
+
+  --border-structural:var(--fcl-ink);     /* the structural 1px border */
+  --border-hairline:  var(--fcl-hairline);/* interior divisions on cream */
+
+  --selection-bg:     var(--fcl-oxblood);
+  --selection-fg:     var(--fcl-paper);
+}

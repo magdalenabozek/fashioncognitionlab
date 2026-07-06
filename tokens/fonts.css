@@ -1,0 +1,6 @@
+/* Fashion Cognition Lab — webfonts.
+   All three families ship from Google Fonts.
+   IBM Plex Sans  — display + body (thin weights 200/300 carry the headlines)
+   IBM Plex Mono  — labels, eyebrows, metadata, spec codes
+   Fraunces       — italic serif accent (emphasised words, pull quotes) */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@200;300;400;500;600&family=Fraunces:opsz,ital,wght@9..144,1,400;9..144,1,500&display=swap");
